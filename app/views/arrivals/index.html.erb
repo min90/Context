@@ -1,0 +1,10 @@
+<% content_for :title, "In/out board" %>
+
+
+<div class="row">
+    <% @users.each_with_index do |user, index| %>
+    <div class="col-3">
+      <%= render partial: 'info', locals: {user: user} %>
+    </div>
+  <% end %>
+</div>
