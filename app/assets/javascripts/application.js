@@ -17,3 +17,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+  var date = new Date();
+  $(".clock").html(date.toTimeString().slice(0,8));
+});
